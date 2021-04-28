@@ -31,7 +31,7 @@ class App extends Component{
             return robots.name.toLowerCase().includes(this.state.searchfeild.toLowerCase());
         })
         if(this.state.robots.length === 0){
-            return <h1>Loading</h1>
+            return <h1 className='tc'>Loading</h1>
         }else{
             console.log(filteredRobots);
             return(
